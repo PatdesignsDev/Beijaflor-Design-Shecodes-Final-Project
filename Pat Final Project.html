@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project Pat</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: radial-gradient(
+          circle at 18.7% 37.8%,
+          rgb(250, 250, 250) 0%,
+          rgb(225, 234, 238) 95%
+        );
+
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto; /* centra todas as imagens */
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        border-radius: 10px;
+        border: 2px solid #dd3559;
+        line-height: 42px;
+        text-align: center;
+        margin: 30px auto;
+        max-width: 1000px;
+        padding: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      h2 {
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 10px auto;
+        padding: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      p {
+        color: black;
+        display: block;
+        line-height: 1.5;
+        font-size: 15px;
+        text-align: left;
+        margin: 20px auto;
+        padding: 20px auto;
+        max-width: 90%;
+      }
+
+      hr {
+        max-width: 1000px;
+        border: none;
+        height: 0.5px;
+        background-color: #dd3559;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      button {
+        display: inline-block;
+        background: linear-gradient(
+          111.3deg,
+          rgb(252, 56, 56) 11.7%,
+          rgb(237, 13, 81) 81.7%
+        );
+        color: #fff;
+        font-size: 15px;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(43, 43, 43, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+
+      .container .beijaflor {
+        background-color: white;
+        margin: 40px auto 60px auto;
+        border-radius: 15px;
+        width: 80%;
+        color: black;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        box-sizing: border-box;
+      }
+
+      .logo img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+      }
+
+      .designers img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: 220px;
+        margin-top: 15px;
+      }
+
+      .finalText {
+        text-align: left;
+        margin: 20px auto;
+        color: black;
+        max-width: 90%;
+      }
+
+      .different {
+        font-weight: bolder;
+        color: black;
+      }
+
+      .unique {
+        font-size: large;
+        font-weight: bolder;
+        color: black;
+      }
+
+      .bf {
+        color: #dd3559;
+      }
+
+      .td {
+        color: #dd3559;
+      }
+
+      .insta a {
+        color: #ff4c73;
+        text-decoration: none;
+      }
+
+      .insta a:hover {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+        color: rgb(255, 3, 179);
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 20px auto;
+      }
+
+      .offer-button {
+        background: linear-gradient(135deg, #ff67ca, #ff0055);
+        color: white;
+        font-size: 15px;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(43, 43, 43, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      .offer-button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .buy-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #ff0055, #ff6600);
+        color: white;
+        font-size: 15px;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(43, 43, 43, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      .buy-button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        animation: bounceRotate 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+          forwards;
+      }
+
+      @keyframes bounceRotate {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        30% {
+          transform: translateY(-15px) rotate(-10deg);
+        }
+        50% {
+          transform: translateY(0) rotate(10deg);
+        }
+        70% {
+          transform: translateY(-8px) rotate(-5deg);
+        }
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+      }
+
+      .footer {
+        text-align: center;
+        margin: 20px auto;
+        padding-bottom: 30px;
+        font-size: 13px;
+        color: #555;
+      }
+
+      .footer a {
+        color: #dd3559;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+        color: rgb(255, 3, 179);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="beijaflor">
+        <div class="logo">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/175/179/original/logo.png?1761313663"
+            alt="Beijaflor Logo"
+            width="320"
+          />
+        </div>
+
+        <div class="Brandbf">
+          <h1>
+            ✨ Light as air, unique as you! The comfort <br />and charm of
+            <span class="td">Beijaflor Design</span> jewelry. 💎
+          </h1>
+
+          <div class="designers">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/175/181/original/bd12b6bc-1db0-4631-96b6-a45b1ae7a1d6.jpg?1761319512"
+              alt="Designers and jewelry"
+            />
+          </div>
+          <br />
+          <div class="brand">
+            <h2>
+              At <span class="bf">Beijaflor Design</span>, we believe beauty
+              should be felt ✨ not just seen!
+            </h2>
+          </div>
+
+          <hr />
+
+          <div class="finalText">
+            <p>
+              <strong>Our silicone jewelry,</strong> designed by two Portuguese
+              creators, <strong>blends style, comfort,</strong> and innovation
+              since 2012.
+              <span class="unique">
+                <em>
+                  ✨ Made for unique and authentic women, our pieces are
+                  hypoallergenic, ultra-light, and durable.
+                </em>
+              </span>
+              Perfect even for the most sensitive. Each design is a 💎
+              <strong>limited edition,</strong> created with soul, color, and
+              personality. Because wearing Beijaflor means more than wearing an
+              accessory — it's about expressing who you are with confidence and
+              originality.
+              <span class="different">
+                🌈💖 Dare to be different. Shine with Beija-Flor Design. 💫
+              </span>
+              <span class="insta">
+                <a
+                  href="https://www.instagram.com/beijaflor_design/"
+                  target="_blank"
+                >
+                  Check out <strong> Beijaflor Design instagram </strong>
+                </a>
+              </span>
+            </p>
+          </div>
+          <div class="button-group">
+            <button class="offer-button">🎁 Exclusive offer!</button>
+            <button
+              class="buy-button"
+              onclick="window.open('https://beija-flor-design.sumupstore.com/', '_blank')"
+            >
+              👉 Buy Beijaflor Online
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="footer">
+        This page was built by
+        <a href="https://github.com/PatdesignsDev" target="_blank">
+          Patricia Moutinho
+        </a>
+      </p>
+    </div>
+
+    <script>
+      function offer() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let alergie = prompt(
+          "Do you have allergies when using normal jewelry?"
+        );
+        alergie = alergie.toLowerCase();
+        if (alergie === "yes" || alergie === "yup" || alergie === "y") {
+          alert(
+            "You are in the right place!🌈 You can wear our hypoallergenic jewelry!😍"
+          );
+        } else {
+          alert("Wow, you can wear everything!😎");
+        }
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! Your discount is on the way 🎁 💌. Check out our amazing collection at our online store!" +
+            emoji
+        );
+      }
+
+      let offerButton = document.querySelector(".offer-button");
+      offerButton.addEventListener("click", offer);
+    </script>
+  </body>
+</html>
